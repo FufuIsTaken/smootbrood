@@ -99,7 +99,6 @@
     <Content Include="Admin\bootstrap-elements.html" />
     <Content Include="Admin\bootstrap-grid.html" />
     <Content Include="Admin\charts.html" />
-    <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\forms.html" />
     <Content Include="Admin\index-rtl.html" />
     <Content Include="Admin\index.html" />
@@ -177,13 +176,6 @@
     </Compile>
     <Compile Include="Admin\AdminPagina.aspx.designer.cs">
       <DependentUpon>AdminPagina.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

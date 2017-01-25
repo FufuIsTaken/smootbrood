@@ -20,9 +20,12 @@ namespace Smootbrood
             SurfboardDB db = new SurfboardDB();
 
             if (db.ValidateUser(txtUsername.Text, txtPassword.Text))
-                FormsAuthentication.RedirectFromLoginPage(txtUsername.Text,  false);
+            {
+                FormsAuthentication.SetAuthCookie(txtUsername.Text, false);
+                Response.Redirect("/Admin/AdminPagina.aspx", true);
+            }
             else
-                Response.Redirect("Admin/Default.aspx", true);
+                Response.Redirect("/logon.aspx", true);
         }
     }
 }

@@ -17,8 +17,8 @@ namespace Smootbrood
             {
                 con.Open();
                 SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [User] WHERE Username = @username AND Password = @password", con);
-                cmd.Parameters.AddWithValue("username", username);
-                cmd.Parameters.AddWithValue("password", password);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@password", password);
 
                 int count = Convert.ToInt32(cmd.ExecuteScalar());
 
