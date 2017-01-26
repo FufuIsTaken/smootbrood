@@ -76,7 +76,7 @@ namespace smoothboard2
 
         public void ProductBekeken(int Id)
         {
-            string query = "UPDATE Artikel SET Bekeken = Bekeken + 1 WHERE Id = @Id";
+            string query = "UPDATE Product SET Bekeken = Bekeken + 1 WHERE Id = @Id";
             using (SqlConnection con = new SqlConnection(ConStr))
             using (SqlCommand command = new SqlCommand(query, con))
             {
