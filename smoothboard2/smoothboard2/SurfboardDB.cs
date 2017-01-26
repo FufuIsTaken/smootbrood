@@ -44,7 +44,7 @@ namespace smoothboard2
                 product.Id = Convert.ToInt32(reader["Id"]);
                 product.Afbeelding = reader["Afbeelding"].ToString();
                 product.Naam = reader["Naam"].ToString();
-                product.Naam = reader["Beschrijving"].ToString();
+                product.Beschrijving = reader["Beschrijving"].ToString();
                 product.Prijs = Convert.ToDecimal(reader["Prijs"]);
                 producten.Add(product);
             }
@@ -68,7 +68,7 @@ namespace smoothboard2
                 product.Id = Convert.ToInt32(reader["Id"]);
                 product.Afbeelding = reader["Afbeelding"].ToString();
                 product.Naam = reader["Naam"].ToString();
-                product.Naam = reader["Beschrijving"].ToString();
+                product.Beschrijving = reader["Beschrijving"].ToString();
                 product.Prijs = Convert.ToDecimal(reader["Prijs"]);
             }
             return product;

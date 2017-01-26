@@ -1,10 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductPagina.aspx.cs" Inherits="smoothboard2.ProductPagina" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <div class="grow">
+
+<asp:Content ID="BodyContent" ContentPlaceholderId="body" runat="server">
+
+<div class="grow">
 		<div class="container">
-			<h2><asp:Label ID="NaamLabel" runat="server" Text="Naam"></asp:Label></h2>
+			<h2><asp:Label ID="NaamLabel"  runat="server" Text="Naam"></asp:Label></h2>
 		</div>
 	</div>
 	<!-- grow -->
@@ -14,32 +16,25 @@
 				<div class="product-price1">
 				<div class="top-sing">
 				<div class="col-md-7 single-top">	
-			        <div class="thumb-image"> <img id="AfbeeldingLabel"  src="Afbeelding" runat="server" data-imagezoom="true" class="img-responsive"> </div>
+						<div class="flexslider">
+			  <ul class="slides">
+			    <li data-thumb="images/si.jpg">
+			        <div class="thumb-image"> <img id="AfbeeldingLabel" src="Afbeelding" runat="server" data-imagezoom="true" class="img-responsive"> </div>
+			  </ul>
 		</div>
 
 	<div class="clearfix"> </div>
-<!-- slide -->
-
-
-						<!-- FlexSlider -->
-  <script defer src="js/jquery.flexslider.js"></script>
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-
-<script>
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    controlNav: "thumbnails"
-  });
-});
-</script>
 
 	
 	
+	
+	
+	
+	
+					</div>	
 					<div class="col-md-5 single-top-in simpleCart_shelfItem">
 						<div class="single-para ">
-						<h4>Lorem Ipsum</h4>
+						<p><asp:Label ID="BeschrijvingLabel"  runat="server" Text="Beschrijving"></asp:Label></p>
 							<div class="star-on">
 								
 								<div class="review">
@@ -49,29 +44,10 @@ $(window).load(function() {
 							<div class="clearfix"> </div>
 							</div>
 							
-							<h5 class="item_price">$<asp:Label ID="PrijsLabel" class="PrijsLabel" runat="server" Text="Prijs" /></h5>
-							<p><asp:Label ID="BeschrijvingLabel" runat="server" Text="Beschrijving"></asp:Label></p>
-							<div class="available">
-								<ul>
-									<li>Color
-										<select>
-										<option>Silver</option>
-										<option>Black</option>
-										<option>Dark Black</option>
-										<option>Red</option>
-									</select></li>
-								<li class="size-in">Size<select>
-									<option>Large</option>
-									<option>Medium</option>
-									<option>small</option>
-									<option>Large</option>
-									<option>small</option>
-								</select></li>
-								<div class="clearfix"> </div>
-							</ul>
-						</div>
+							<h5 class="item_price">$ 500.00</h5>
+
 							
-								<a href="#" class="add-cart item_add">ADD TO CART</a>
+								<a href="#" class="add-cart item_add">Toevoegen aan Winkelwagen</a>
 							
 						</div>
 					</div>
@@ -124,4 +100,4 @@ $(window).load(function() {
 		<div class="clearfix"> </div>
 		</div>
 		</div>
-</asp:Content>
+    </asp:Content>
