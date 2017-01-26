@@ -22,9 +22,9 @@
 							</div>
 						</a>	
 						</div>
-						<p class="tun"><span>Lorem ipsum establish</span><br>CLARISSA</p>
+						<strong><p class="tun"><%# Eval("Naam") %></p></strong>
 						<div class="ca-rt">
-							<a href="Productpagina.aspx?id=<%# Eval("Id") %>"  class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>						
+							<a href="#"  class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>						
 						</div>
 						<div class="clearfix"></div>
 					</div>

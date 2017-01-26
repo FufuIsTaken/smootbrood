@@ -87,6 +87,29 @@ namespace smoothboard2
             }
         }
 
+        public List<Product> getPopProducten(int exclude_id)
+        {
+            List<Product> Producten = new List<Product>();
+            SqlConnection con = new SqlConnection(ConStr);
+            SqlCommand cmd = new SqlCommand("SELECT TOP 3 * FROM Product WHERE NOT Id = @Id ORDER BY Bekeken DESC", con);
+            cmd.Parameters.AddWithValue("@Id", exclude_id);
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while
+             (reader.Read())
+            {
+                Product product = new Product();
+                product.Id = Convert.ToInt32(reader["Id"]);
+                product.Afbeelding = reader["Afbeelding"].ToString();
+                product.Naam = reader["Naam"].ToString();
+                product.Beschrijving = reader["Beschrijving"].ToString();
+                product.Prijs = Convert.ToDecimal(reader["Prijs"]);
+                Producten.Add(product);
+            }
+            con.Close();
+            return Producten;
+        }
+
 
     }
 }

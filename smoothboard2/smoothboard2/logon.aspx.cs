@@ -25,7 +25,7 @@ namespace smoothboard2
                 Response.Redirect("/Admin/AdminPagina.aspx", true);
             }
             else
-                Response.Redirect("/logon.aspx", true);
+                Response.Redirect("logon.aspx", true);
         }
     }
 }

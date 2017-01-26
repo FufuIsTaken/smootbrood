@@ -14,7 +14,6 @@ namespace smoothboard2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             DB.ProductBekeken(Convert.ToInt32(Request.QueryString["id"]));
 
             this.Id = Convert.ToInt32(Request.QueryString["id"]);
@@ -28,9 +27,13 @@ namespace smoothboard2
                 Response.Redirect("/Home.aspx");
             }
 
+            ListView1.DataSource = DB.getPopProducten(Id);
+            ListView1.DataBind();
+
             AfbeeldingLabel.Src = item.Afbeelding;
             NaamLabel.Text = item.Naam;
             BeschrijvingLabel.Text = item.Beschrijving;
+            PrijsLabel.Text = Convert.ToString(item.Prijs);
         }
     }
 }
