@@ -69,6 +69,7 @@ namespace smoothboard2
                 product.Afbeelding = reader["Afbeelding"].ToString();
                 product.Naam = reader["Naam"].ToString();
                 product.Beschrijving = reader["Beschrijving"].ToString();
+                product.DtProduct = Convert.ToDateTime(reader["DtProduct"]);
                 product.Prijs = Convert.ToDecimal(reader["Prijs"]);
                 producten.Add(product);
             }
@@ -94,6 +95,7 @@ namespace smoothboard2
                 product.Afbeelding = reader["Afbeelding"].ToString();
                 product.Naam = reader["Naam"].ToString();
                 product.Beschrijving = reader["Beschrijving"].ToString();
+                product.DtProduct = Convert.ToDateTime(reader["DtProduct"]);
                 product.Prijs = Convert.ToDecimal(reader["Prijs"]);
             }
             return product;
@@ -128,6 +130,7 @@ namespace smoothboard2
                 product.Afbeelding = reader["Afbeelding"].ToString();
                 product.Naam = reader["Naam"].ToString();
                 product.Beschrijving = reader["Beschrijving"].ToString();
+                product.DtProduct = Convert.ToDateTime(reader["DtProduct"]);
                 product.Prijs = Convert.ToDecimal(reader["Prijs"]);
                 Producten.Add(product);
             }
@@ -135,6 +138,29 @@ namespace smoothboard2
             return Producten;
         }
 
+
+        public List<Product> getPopProducten2()
+        {
+            List<Product> Producten = new List<Product>();
+            SqlConnection con = new SqlConnection(ConStr);
+            SqlCommand cmd = new SqlCommand("SELECT TOP 5 * FROM Product ORDER BY Bekeken DESC", con);
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while
+             (reader.Read())
+            {
+                Product product = new Product();
+                product.Id = Convert.ToInt32(reader["Id"]);
+                product.Afbeelding = reader["Afbeelding"].ToString();
+                product.Naam = reader["Naam"].ToString();
+                product.Beschrijving = reader["Beschrijving"].ToString();
+                product.DtProduct = Convert.ToDateTime(reader["DtProduct"]);
+                product.Prijs = Convert.ToDecimal(reader["Prijs"]);
+                Producten.Add(product);
+            }
+            con.Close();
+            return Producten;
+        }
 
     }
 }

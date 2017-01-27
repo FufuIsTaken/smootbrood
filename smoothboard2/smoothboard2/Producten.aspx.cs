@@ -15,6 +15,9 @@ namespace smoothboard2
         {
             ListView1.DataSource = DB.getProducten();
             ListView1.DataBind();
+
+            ListView2.DataSource = DB.getPopProducten2();
+            ListView2.DataBind();
         }
     }
 }

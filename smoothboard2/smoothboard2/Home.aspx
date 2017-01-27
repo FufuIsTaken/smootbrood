@@ -59,32 +59,34 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="content-top">
-                <h1>Recente Producten</h1>
-                <div class="grid-in">
-                    <asp:ListView ID="ListView1" runat="server">
-                        <ItemTemplate>
-                            <div class="col-md-3 grid-top simpleCart_shelfItem">
-                                <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-                                    <img class="img-responsive" src="<%# Eval("Afbeelding") %>" alt="">
-                                    <div class="b-wrapper">
-                                        <h3 class="b-animate b-from-left    b-delay03 ">
-                                            <span><%# Eval("Naam") %></span>
+                    <div class="content-top">
+                        <h1>Recente Producten</h1>
+                        <div class="grid-in">
+                            <asp:ListView ID="ListView1" runat="server">
+                                <ItemTemplate>
+                                    <div class="col-md-3 grid-top simpleCart_shelfItem">
+                                        <a href="ProductPagina.aspx?id=<%# Eval("Id") %>" class="b-link-stripe b-animate-go  thickbox">
+                                            <img class="img-responsive" src="<%# Eval("Afbeelding") %>" alt="">
+                                            <div class="b-wrapper">
+                                                <h3 class="b-animate b-from-left    b-delay03 ">
+                                                    <span><%# Eval("Naam") %>></span>
 
-                                        </h3>
+                                                </h3>
+                                            </div>
+                                        </a>
+
+
+                                        <p><a href="ProductPagina.aspx?id=<%# Eval("Id") %>"><%# Eval("Naam") %></a></p>
+                                        <a href="#" class="item_add">
+                                            <p class="number item_price"><i></i><%# Eval("Prijs") %></</p>
+                                        </a>
                                     </div>
-                                </a>
-                                <p><a href="Artikelpagina.aspx?id=<%# Eval("ArtikelId") %>"><%# Eval("Naam") %></a></p>
-                                <a href="#" class="item_add">
-                                    <p class="number item_price"><i></i><%# Eval("Prijs") %></p>
-                                </a>
-                            </div>
-                            <div class="clearfix"></div>
-                        </ItemTemplate>
-                    </asp:ListView>
+                                </ItemTemplate>
+                            </asp:ListView>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!----->
-    </div>
 </asp:Content>
