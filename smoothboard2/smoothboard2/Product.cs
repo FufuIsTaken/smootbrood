@@ -13,5 +13,6 @@ namespace smoothboard2
         public decimal Prijs { get; set; }
         public string Beschrijving { get; set; }
         public int Bekeken { get; set; }
+        public DateTime DtProduct { get; set; }
     }
 }

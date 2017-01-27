@@ -30,6 +30,30 @@ namespace smoothboard2
             return result;
         }
 
+        public List<Product> GetRecenteProducten()
+        {
+            List<Product> producten = new List<Product>();
+            SqlConnection con = new SqlConnection(ConStr);
+            SqlCommand cmd = new SqlCommand("SELECT TOP 4 * FROM Product ORDER BY DtProduct DESC", con);
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while
+             (reader.Read())
+            {
+                Product product = new Product();
+                product.Id = Convert.ToInt32(reader["Id"]);
+                product.Afbeelding = reader["Afbeelding"].ToString();
+                product.Naam = reader["Naam"].ToString();
+                product.DtProduct = Convert.ToDateTime(reader["DtProduct"]);
+                product.Beschrijving = reader["Beschrijving"].ToString();
+                product.Prijs = Convert.ToDecimal(reader["Prijs"]);
+                producten.Add(product);
+            }
+            con.Close();
+            return producten;
+        }
+
+        //item.DtArtikel = Convert.ToDateTime(reader["DtArtikel"]);
 
         public List<Product> getProducten()
         {
@@ -51,6 +75,7 @@ namespace smoothboard2
             con.Close();
             return producten;
         }
+
 
 
         public Product getProducts(int ID)

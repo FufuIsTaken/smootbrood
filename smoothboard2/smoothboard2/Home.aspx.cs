@@ -9,11 +9,11 @@ namespace smoothboard2
 {
     public partial class Home : System.Web.UI.Page
     {
-       // SurfboardDB DB = new SurfboardDB();
+        SurfboardDB DB = new SurfboardDB();
         protected void Page_Load(object sender, EventArgs e)
         {
-            //ListView1.DataSource = DB.getProducten();
-            //ListView1.DataBind();
+            ListView1.DataSource = DB.GetRecenteProducten();
+            ListView1.DataBind();
         }
     }
 }

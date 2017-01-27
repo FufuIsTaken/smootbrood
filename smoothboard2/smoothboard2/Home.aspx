@@ -60,24 +60,28 @@
                 <div class="clearfix"></div>
             </div>
             <div class="content-top">
-                <h1></h1>
+                <h1>Recente Producten</h1>
                 <div class="grid-in">
-                    <div class="col-md-3 grid-top simpleCart_shelfItem">
-                        <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-                            <img class="img-responsive" src="images/pi.jpg" alt="">
-                            <div class="b-wrapper">
-                                <h3 class="b-animate b-from-left    b-delay03 ">
-                                    <span>TRIBECA LIVING</span>
+                    <asp:ListView ID="ListView1" runat="server">
+                        <ItemTemplate>
+                            <div class="col-md-3 grid-top simpleCart_shelfItem">
+                                <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                                    <img class="img-responsive" src="<%# Eval("Afbeelding") %>" alt="">
+                                    <div class="b-wrapper">
+                                        <h3 class="b-animate b-from-left    b-delay03 ">
+                                            <span><%# Eval("Naam") %></span>
 
-                                </h3>
+                                        </h3>
+                                    </div>
+                                </a>
+                                <p><a href="Artikelpagina.aspx?id=<%# Eval("ArtikelId") %>"><%# Eval("Naam") %></a></p>
+                                <a href="#" class="item_add">
+                                    <p class="number item_price"><i></i><%# Eval("Prijs") %></p>
+                                </a>
                             </div>
-                        </a>
-                        <p><a href="single.html">TRIBECA LIVING</a></p>
-                        <a href="#" class="item_add">
-                            <p class="number item_price"><i></i>$500.00</p>
-                        </a>
-                    </div>
-                    <div class="clearfix"></div>
+                            <div class="clearfix"></div>
+                        </ItemTemplate>
+                    </asp:ListView>
                 </div>
             </div>
         </div>
