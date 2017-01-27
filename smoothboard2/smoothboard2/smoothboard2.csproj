@@ -185,6 +185,7 @@
     <Content Include="About.aspx" />
     <Content Include="Admin\AdminHome.aspx" />
     <Content Include="Admin\AdminPagina.aspx" />
+    <Content Include="Admin\AdminProduct.aspx" />
     <Content Include="Admin\css\bootstrap-rtl.css" />
     <Content Include="Admin\css\bootstrap-rtl.min.css" />
     <Content Include="Admin\css\bootstrap.css" />
@@ -336,6 +337,13 @@
     </Compile>
     <Compile Include="Admin\AdminPagina.aspx.designer.cs">
       <DependentUpon>AdminPagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminProduct.aspx.cs">
+      <DependentUpon>AdminProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminProduct.aspx.designer.cs">
+      <DependentUpon>AdminProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
