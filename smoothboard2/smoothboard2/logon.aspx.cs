@@ -21,11 +21,10 @@ namespace smoothboard2
 
             if (db.ValidateUser(txtUsername.Text, txtPassword.Text))
             {
-                FormsAuthentication.SetAuthCookie(txtUsername.Text, false);
-                Response.Redirect("/Admin/AdminPagina.aspx", true);
+                ///FormsAuthentication.SetAuthCookie(txtUsername.Text, true);
+                //Response.Redirect("/Admin/AdminPagina.aspx", true);
+                FormsAuthentication.RedirectFromLoginPage(txtUsername.Text, false);
             }
-            else
-                Response.Redirect("logon.aspx", true);
         }
     }
 }
