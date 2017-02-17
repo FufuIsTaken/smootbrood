@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5399F531-14D6-44E5-B7FF-96BB54406F9C}</ProjectGuid>
+    <ProjectGuid>{DF3DBBAC-9CAD-4F06-88B2-847BC314EB4D}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>smoothboard2</RootNamespace>
-    <AssemblyName>smoothboard2</AssemblyName>
+    <RootNamespace>InterProduct</RootNamespace>
+    <AssemblyName>InterProduct</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -198,94 +198,24 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Admin\AdminHome.aspx" />
-    <Content Include="Admin\AdminPagina.aspx" />
-    <Content Include="Admin\AdminProduct.aspx" />
-    <Content Include="Admin\css\bootstrap-rtl.css" />
-    <Content Include="Admin\css\bootstrap-rtl.min.css" />
-    <Content Include="Admin\css\bootstrap.css" />
-    <Content Include="Admin\css\bootstrap.min.css" />
-    <Content Include="Admin\css\plugins\morris.css" />
-    <Content Include="Admin\css\sb-admin-rtl.css" />
-    <Content Include="Admin\css\sb-admin.css" />
-    <Content Include="Admin\font-awesome\css\font-awesome.css" />
-    <Content Include="Admin\font-awesome\css\font-awesome.min.css" />
-    <Content Include="Admin\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Admin\js\bootstrap.js" />
-    <Content Include="Admin\js\bootstrap.min.js" />
-    <Content Include="Admin\js\jquery.js" />
-    <Content Include="Admin\js\plugins\flot\excanvas.min.js" />
-    <Content Include="Admin\js\plugins\flot\flot-data.js" />
-    <Content Include="Admin\js\plugins\flot\jquery.flot.js" />
-    <Content Include="Admin\js\plugins\flot\jquery.flot.pie.js" />
-    <Content Include="Admin\js\plugins\flot\jquery.flot.resize.js" />
-    <Content Include="Admin\js\plugins\flot\jquery.flot.tooltip.min.js" />
-    <Content Include="Admin\js\plugins\morris\morris-data.js" />
-    <Content Include="Admin\js\plugins\morris\morris.js" />
-    <Content Include="Admin\js\plugins\morris\morris.min.js" />
-    <Content Include="Admin\js\plugins\morris\raphael.min.js" />
-    <Content Include="App_Data\smoothboard.mdf" />
-    <Content Include="App_Data\smoothboard_log.ldf">
-      <DependentUpon>smoothboard.mdf</DependentUpon>
+    <Content Include="App_Data\InterProductDB.mdf" />
+    <Content Include="App_Data\InterProductDB_log.ldf">
+      <DependentUpon>InterProductDB.mdf</DependentUpon>
     </Content>
-    <Content Include="Checkout.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Faq.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Admin\Admin.Master" />
-    <Content Include="Admin\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="Admin\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Admin\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="Admin\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="Admin\font-awesome\less\bordered-pulled.less" />
-    <Content Include="Admin\font-awesome\less\core.less" />
-    <Content Include="Admin\font-awesome\less\fixed-width.less" />
-    <Content Include="Admin\font-awesome\less\font-awesome.less" />
-    <Content Include="Admin\font-awesome\less\icons.less" />
-    <Content Include="Admin\font-awesome\less\larger.less" />
-    <Content Include="Admin\font-awesome\less\list.less" />
-    <Content Include="Admin\font-awesome\less\mixins.less" />
-    <Content Include="Admin\font-awesome\less\path.less" />
-    <Content Include="Admin\font-awesome\less\rotated-flipped.less" />
-    <Content Include="Admin\font-awesome\less\spinning.less" />
-    <Content Include="Admin\font-awesome\less\stacked.less" />
-    <Content Include="Admin\font-awesome\less\variables.less" />
-    <Content Include="Admin\font-awesome\scss\font-awesome.scss" />
-    <Content Include="Admin\font-awesome\scss\_bordered-pulled.scss" />
-    <Content Include="Admin\font-awesome\scss\_core.scss" />
-    <Content Include="Admin\font-awesome\scss\_fixed-width.scss" />
-    <Content Include="Admin\font-awesome\scss\_icons.scss" />
-    <Content Include="Admin\font-awesome\scss\_larger.scss" />
-    <Content Include="Admin\font-awesome\scss\_list.scss" />
-    <Content Include="Admin\font-awesome\scss\_mixins.scss" />
-    <Content Include="Admin\font-awesome\scss\_path.scss" />
-    <Content Include="Admin\font-awesome\scss\_rotated-flipped.scss" />
-    <Content Include="Admin\font-awesome\scss\_spinning.scss" />
-    <Content Include="Admin\font-awesome\scss\_stacked.scss" />
-    <Content Include="Admin\font-awesome\scss\_variables.scss" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Admin\LICENSE" />
-    <Content Include="Admin\README.md" />
-    <Content Include="Admin\Web.config" />
-    <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Home.aspx" />
-    <Content Include="logon.aspx" />
-    <Content Include="Producten.aspx" />
-    <Content Include="ProductPagina.aspx" />
+    <Content Include="IPAdmin.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -439,34 +369,6 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin.Master.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Admin.Master.designer.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AdminHome.aspx.cs">
-      <DependentUpon>AdminHome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\AdminHome.aspx.designer.cs">
-      <DependentUpon>AdminHome.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AdminPagina.aspx.cs">
-      <DependentUpon>AdminPagina.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\AdminPagina.aspx.designer.cs">
-      <DependentUpon>AdminPagina.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AdminProduct.aspx.cs">
-      <DependentUpon>AdminProduct.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\AdminProduct.aspx.designer.cs">
-      <DependentUpon>AdminProduct.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -478,13 +380,6 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Checkout.aspx.cs">
-      <DependentUpon>Checkout.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Checkout.aspx.designer.cs">
-      <DependentUpon>Checkout.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -499,46 +394,19 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Faq.aspx.cs">
-      <DependentUpon>Faq.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Faq.aspx.designer.cs">
-      <DependentUpon>Faq.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="InterDB.cs" />
+    <Compile Include="IPAdmin.aspx.cs">
+      <DependentUpon>IPAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="logon.aspx.cs">
-      <DependentUpon>logon.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="logon.aspx.designer.cs">
-      <DependentUpon>logon.aspx</DependentUpon>
+    <Compile Include="IPAdmin.aspx.designer.cs">
+      <DependentUpon>IPAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Product.cs" />
-    <Compile Include="Producten.aspx.cs">
-      <DependentUpon>Producten.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Producten.aspx.designer.cs">
-      <DependentUpon>Producten.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ProductPagina.aspx.cs">
-      <DependentUpon>ProductPagina.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProductPagina.aspx.designer.cs">
-      <DependentUpon>ProductPagina.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -555,7 +423,6 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="SurfboardDB.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -564,11 +431,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="css\" />
-    <Folder Include="images\" />
-    <Folder Include="js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -582,9 +445,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62124</DevelopmentServerPort>
+          <DevelopmentServerPort>52354</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62124/</IISUrl>
+          <IISUrl>http://localhost:52354/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
